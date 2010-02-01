@@ -35,4 +35,14 @@ class NotesController < ApplicationController
       render :new
     end
   end
+
+  def destroy
+    @note = Note.find(params[:id])
+    if @note.destroy
+      flash[:notice] = "Thank You Note deleted!"
+      redirect_to notes_url
+    else
+      render :show
+    end
+  end
 end

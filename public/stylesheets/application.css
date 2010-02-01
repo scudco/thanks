@@ -27,7 +27,7 @@ body { font-size: 14px; }
 #bd h1 { font-size: 36px; }
 #bd h2 { font-size: 32px; }
 
-#notes .note { float: left; margin: 20px; padding: 10px; width: 200px; -moz-border-radius: 10px; background-color: #3D2614; }
+#notes .note { float: left; margin: 20px; padding: 10px; width: 200px; height: 125px; -moz-border-radius: 10px; background-color: #3D2614; }
 #notes .note.unsent { float: left; margin: 20px; padding: 10px; width: 200px; color: white; -moz-border-radius: 10px; }
 #notes .note.sent { float: left; margin: 20px; padding: 10px; width: 200px; color: #666666; -moz-border-radius: 10px; }
 #notes p { margin-bottom: 10px; }
