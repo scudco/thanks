@@ -1,0 +1,84 @@
+#foo { 
+  color: #99362C;
+  color: #3D2614;
+  color: #737246;
+  color: #E8B46D;
+  color: #D47449;
+}
+
+html { background-color: #3D2614; }
+
+a { text-decoration: none; font-weight: bold; }
+
+a:link { color: #E8B46D; text-decoration: underline; }
+
+a:visited { color: #E8B46D; text-decoration: none; }
+
+a:hover { color: #E8B46D; background-color: #3D2614; }
+
+a:active { color: #E8B46D; }
+
+body { font-size: 14px; }
+
+#doc { background-color: #737246; color: white; padding: 20px; margin: 20px auto; }
+
+#logo { margin: 0 auto; text-align: center; font-size: 64px; }
+
+#bd h1 { font-size: 36px; }
+#bd h2 { font-size: 32px; }
+
+#notes .note { float: left; margin: 20px; padding: 10px; width: 200px; -moz-border-radius: 10px; background-color: #3D2614; }
+#notes .note.unsent { float: left; margin: 20px; padding: 10px; width: 200px; color: white; -moz-border-radius: 10px; }
+#notes .note.sent { float: left; margin: 20px; padding: 10px; width: 200px; color: #666666; -moz-border-radius: 10px; }
+#notes p { margin-bottom: 10px; }
+#notes p.gift { font-weight: bold; font-size: 16px; text-align: right; }
+#notes .note p.body { font-size: 16px; }
+
+#sent_notes { clear: both; }
+
+#note_controls { float: right; }
+#note_controls form { float: right; margin: 5px 10px 0 0; }
+#note_controls form input[type=submit] { 
+  -moz-border-radius: 5px;
+  -moz-box-shadow: 1px 2px 3px #1A1A1A;
+  background-color: #99362C;
+  color: white;
+  font-weight: bold;
+  border: 0 solid black;
+  cursor: pointer;
+  margin: -3px 0 0 10px;
+  padding: 3px;
+}
+#note_controls a { font-size: 24px; text-align: right; float: right; }
+
+.single_note p { margin: 20px; font-size: 20px; }
+.single_note p.address, .single_note p.gift { background-color: #3D2614; width: 300px; height: 100px; -moz-border-radius: 10px; padding: 10px; }
+.single_note p.address { float: left; }
+.single_note p.address + p { float: left; width: 85px; margin: 70px 0 0 0; }
+.single_note p.gift { float: right; }
+.single_note p.body { font-size: 48px; clear: both; }
+.single_note p.address + form { float: right; margin: 20px; width: 300px; height: 100px; -moz-border-radius: 10px; padding: 10px; }
+.single_note p.address + form input[type=submit] { 
+  -moz-border-radius: 10px;
+  -moz-box-shadow: 1px 2px 3px #1A1A1A;
+  background-color: #99362C;
+  color: white;
+  font-weight: bold;
+  border: 0 solid black;
+  cursor: pointer;
+  display: block;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+form.formtastic { margin: 0 auto; width: 660px; }
+form li { margin: 20px 0; }
+form label { display: block; font-size: 24px; }
+form li#note_address_input { float: left; margin-right: 50px; }
+form li#note_gift_input { float: left; }
+form li#note_body_input { clear: both; }
+form li#note_sent_input { font-size: 24px; }
+form li#note_sent_input label { margin: 5px; }
+form textarea#note_address { height: 75px; }
+form textarea#note_gift { height: 75px; }
+form textarea#note_body { width: 650px; height: 200px; }

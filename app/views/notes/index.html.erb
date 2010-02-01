@@ -1,0 +1,22 @@
+<%= link_to "New Thank You Note", new_note_path %>
+<div id="notes">
+  <div id="unsent_notes">
+    <h2>Unsent Thank Yous</h2>
+    <% @unsent_notes.each do |note| %>
+      <div class="note unsent" id="note_<%= note.id %>">
+        <%= link_to simple_format(note.address, :class => 'address'), note_path(note) %>
+        <p class="body"><%= truncate(note.body) %></p>
+      </div>
+    <% end %>
+  </div>
+
+  <div id="sent_notes">
+    <h2>Sent Thank Yous</h2>
+    <% @sent_notes.each do |note| %>
+      <div class="note sent" id="note_<%= note.id %>">
+        <%= link_to simple_format(note.address, :class => 'address'), note_path(note) %>
+        <p class="body"><%= truncate(note.body) %></p>
+      </div>
+    <% end %>
+  </div>
+</div>

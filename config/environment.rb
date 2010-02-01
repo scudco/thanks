@@ -40,4 +40,7 @@ Rails::Initializer.run do |config|
   # config.i18n.default_locale = :de
 
   config.gem 'mongo_mapper'
+  config.gem 'formtastic'
 end
+
+MongoMapper.database = "thanks-#{Rails.env}"

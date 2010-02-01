@@ -1,0 +1,15 @@
+<div class="single_note" id="note_<%= note.id %>">
+  <p class="sent"><%= note.sent ? "It's in the mail 8D" : 'Not yet sent' %></p>
+  <%= simple_format(note.address, :class => 'address') %>
+  <p>gave you</p>
+  <p class="gift"><%= note.gift %></p>
+  <p class="body"><%= note.body %></p>
+  <%= simple_format(note.address, :class => 'address') %>
+
+  <% unless note.sent %>
+    <% form_for note, note_path(note), :method => 'put' do |f| %>
+      <%= f.hidden_field :sent, :value => "true" %>
+      <%= submit_tag "Written and Sent!" %>
+    <% end %>
+  <% end %>
+</div>
